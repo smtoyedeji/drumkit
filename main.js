@@ -17,10 +17,3 @@ keys.forEach(key => key.addEventListener("transitionend", function() {
 
 
 window.addEventListener("keydown", playSound)
-
-//if device is touch screen
-window.addEventListener("touchstart", playSound)
-
-keys.forEach(key => key.addEventListener("touchend", function() {
-    key.classList.remove("playing")
-}))
